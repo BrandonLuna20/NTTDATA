@@ -1,0 +1,32 @@
+p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.3em;
+    color: #ffffff;
+}
+
+.container{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    min-height: 50vh;
+  
+}
+
+hr{
+    border-width: 3px;
+    max-width: 65px;
+    border-color: rgb(29, 132, 201);
+}
+
+.btn-xl{
+    background-color: rgb(29, 132, 201);
+    border-color: rgb(29, 132, 201);
+    margin: 10px;
+    padding: 1rem 1rem;
+    border-radius: 100px;
+}
+
+.btn-xl:hover{
+    background-color: rgb(4, 68, 110);
+    border-radius: rgb(4, 68, 110);
+}
