@@ -15,11 +15,19 @@ export class PrimerpasoComponent {
     private router: Router,
     private CuestionarioService: CuestionarioService) {
       this.datosCuestionario = this.fb.group({
-        titulo: ['', Validators.required]
+        titulo: ['', Validators.required],
+        descripcion: ['', Validators.required]
       });
-  }
+    }
 
   ngOnInit(): void {
+  }
+
+  primerpaso(): void {
+    this.CuestionarioService.tituloPregunta = this.datosCuestionario.value.titulo;
+    this.CuestionarioService.descripcionPregunta = this.datosCuestionario.value.descripcion;
+
+    this.router.navigate(['/dashboard/nuevoCuestionario/segundopaso']);
   }
   
 }
